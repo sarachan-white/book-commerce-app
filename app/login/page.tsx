@@ -1,17 +1,17 @@
-"use client";
+//"use client";
 
-import { getProviders, signIn } from "next-auth/react";
-import { useState, useEffect } from "react";
+//import { getProviders, signIn } from "next-auth/react";
+//import { useState, useEffect } from "react";
 
 // eslint-disable-next-line @next/next/no-async-client-component
 function Login() {
-  const [providers, setProviders] = useState(null);
+  //const [providers, setProviders] = useState(null);
 
-  useEffect(() => {
-    getProviders().then((res) => {
-      setProviders(res);
-    });
-  }, []);
+  //useEffect(() => {
+    //getProviders().then((res) => {
+      //setProviders(res);
+    //});
+  //}, []);
 
   return (
     <div className="flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
@@ -22,7 +22,7 @@ function Login() {
           </h2>
         </div>
         <div className="mt-8 space-y-6">
-          {providers &&
+          {/* {providers &&
             Object.values(providers).map((provider) => {
               return (
                 <div key={provider.id} className="text-center">
@@ -44,7 +44,7 @@ function Login() {
                   </button>
                 </div>
               );
-            })}
+            })} */}
         </div>
       </div>
     </div>
